@@ -1,0 +1,302 @@
+@import "../../Styles/common.scss";
+
+.ProductDetail {
+	* {
+		font-weight: bold;
+	}
+
+	padding-top: 125px;
+
+	header {
+		width: 100%;
+		padding: 20px 30px 0;
+
+		ul {
+			display: flex;
+			padding-bottom: 15px;
+			margin: 20px auto 0;
+			font-size: 11px;
+			text-transform: uppercase;
+			max-width: 1140px;
+
+			li {
+				&:after {
+					margin: 0 5px 0 7px;
+					content: ">";
+				}
+				&:last-child:after {
+					content: "";
+				}
+			}
+		}
+	}
+
+	.sectionArea {
+		@include center;
+		padding-bottom: 30px;
+		width: 100%;
+
+		.sectionContainer {
+			@include center;
+			width: 100%;
+			max-width: 1140px;
+			height: 650px;
+
+			.left {
+				height: 100%;
+				width: 50%;
+				padding: 0 30px;
+
+				.mainImg {
+					img {
+						width: 430px;
+						margin: 0 47.5px;
+					}
+
+					.slick-prev {
+						width: 35px;
+						height: 34px;
+						background-repeat: no-repeat;
+						content: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598458481353/images/left__.png");
+					}
+
+					.slick-next {
+						width: 35px;
+						height: 34px;
+						background-repeat: no-repeat;
+						content: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598458481353/images/right__.png");
+					}
+				}
+
+				.subImg {
+					height: 87px;
+					margin: 16px 0;
+					@include center;
+					width: 100%;
+
+					img {
+						width: 85px;
+						height: 85px;
+						padding: 0 2px;
+					}
+				}
+
+				.sns {
+					@include center;
+
+					span,
+					img {
+						width: 36px;
+						text-align: baseline;
+					}
+
+					span {
+						margin-right: 20px;
+					}
+				}
+			}
+
+			.right {
+				width: 50%;
+				height: 100%;
+				margin-left: 30px;
+
+				.mainInfo {
+					.productName {
+						font-size: 30px;
+						margin-bottom: 20px;
+					}
+
+					.price {
+						font-size: 20px;
+						margin-bottom: 10px;
+					}
+
+					.review {
+						font-size: 16px;
+
+						.rating {
+							margin-right: 15px;
+
+							span {
+								padding-right: 5px;
+							}
+						}
+
+						.write {
+							text-decoration: underline;
+							color: $black;
+						}
+					}
+				}
+
+				.subInfo {
+					display: flex;
+					justify-content: space-between;
+					width: 100%;
+					margin: 30px 0;
+
+					.productBtn {
+						display: flex;
+						flex-direction: column;
+
+						* {
+							font-size: 15px;
+							font-weight: 600;
+							width: 235px;
+							height: 42px;
+						}
+
+						.addToBag {
+							background: $orange;
+							margin-bottom: 10px;
+
+							&:hover {
+								background: $black;
+								color: $white;
+							}
+						}
+
+						.findInStore {
+							background: $black;
+							color: $white;
+
+							&:hover {
+								background: $orange;
+								color: $black;
+							}
+						}
+					}
+
+					.addToWishList {
+						button {
+							margin-left: 20px;
+							display: flex;
+							align-items: flex-start;
+
+							&:hover {
+								span {
+									color: $orange;
+								}
+
+								.heartImg {
+									background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598427800341/images/fav_02.svg")
+										no-repeat center;
+								}
+							}
+
+							.heartImg {
+								width: 30px;
+								height: 30px;
+								background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598427800341/images/fav_01.svg")
+									no-repeat center;
+							}
+						}
+
+						.heartImgCheck {
+							height: inherit;
+							background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598427800341/images/fav_03.svg")
+								no-repeat center;
+						}
+
+						span {
+							height: 30px;
+							padding-top: 5px;
+							margin-left: 5px;
+							font-size: 15px;
+							text-decoration: underline;
+						}
+					}
+				}
+
+				.tabInfo {
+					display: flex;
+					flex-direction: column;
+					margin-top: 10px;
+					cursor: pointer;
+					font-size: 15px;
+
+					.tab {
+						display: flex;
+						justify-content: space-between;
+						width: 100%;
+						height: 50px;
+						padding: 15px 7.5px 15px 0;
+						border-top: 1px solid $mediumgray;
+
+						// .MoreBtnRotate {
+						// 	transform: rotate(180deg);
+						// }
+
+						.MoreBtn {
+							.rotate {
+								transform: rotate(180deg);
+							}
+						}
+					}
+
+					.subTab {
+						font-size: 12px;
+
+						.brewingTab {
+							display: flex;
+
+							.brewingTabEl {
+								position: relative;
+								width: 110px;
+								height: 50px;
+								margin: 20px 20px 0 0;
+
+								img {
+									position: absolute;
+									top: 0;
+									left: 0;
+								}
+
+								span {
+									position: absolute;
+									top: 5px;
+									right: 0;
+									font-size: 12px;
+									margin: 7px;
+								}
+							}
+						}
+
+						.showTab {
+							display: flex;
+							height: 100%;
+							animation: down 3s;
+							@keyframes down {
+								from {
+									height: 100%;
+								}
+								to {
+									height: 0%;
+								}
+							}
+
+							div {
+								padding-bottom: 20px;
+							}
+						}
+
+						.hideTab {
+							display: none;
+							height: 0%;
+							animation: up 3s;
+							@keyframes up {
+								from {
+									height: 0%;
+								}
+								to {
+									height: 100%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

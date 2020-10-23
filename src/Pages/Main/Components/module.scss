@@ -1,0 +1,151 @@
+@mixin setSize($width, $height){
+  width: $width;
+  height: $height;
+};
+
+@mixin setAbsolute($top: null, $left: null, $bottom: null, $right: null){
+  position: absolute;
+  @if not ($top) {}
+  @else {top: $top;}
+
+  @if not ($left) {}
+  @else {left: $left;}
+
+  @if not ($bottom) {}
+  @else {bottom: $bottom;}
+
+  @if not ($right) {}
+  @else {right: $right;}
+};
+
+@mixin setFlex($justify-justify: null, $align-align: null, $flex-wrap: null, $order-order: null){
+  display: flex;
+  @if not ($justify-justify) {}
+  @else {justify-content: $justify-justify;}
+
+  @if not ($align-align) {}
+  @else {align-content: $align-align;}
+
+  @if not ($flex-wrap) {}
+  @else {flex-wrap: $flex-wrap;}
+
+  @if not ($order-order) {}
+  @else {order: $order-order;}
+
+  flex-grow: 0;
+  flex-shrink: 0;
+};
+
+@mixin gridPosition($ges, $gce, $grs, $gre){
+  grid-column-start: $ges;
+  grid-column-end: $gce;
+  grid-row-start: $grs;
+  grid-row-end: $gre;
+}
+
+@mixin moduleContainerSetting($margin:140px, $padding:28px) {
+  margin: 0 auto $margin auto;
+  padding: 0 $padding;
+}
+
+@mixin moduleHead($headArrow: null, $headBtn: null){
+  @include setFlex(space-between);
+  @include setSize(100%, 45px);
+  margin-bottom: 28px;
+   font: {
+    size: 30px;
+    weight: 700;
+  }
+   @if not ($headArrow) {}
+   @else {
+    .arrowBox{
+      @include setFlex(space-between);
+      width: 90px;
+       button{
+        @include setSize(22px,22px);
+        background-image: url(/Images/Main/Arrow.svg);
+      }
+      
+      .leftArrow{transform: rotate(180deg);}
+    }
+  }
+  @if not ($headBtn) {}
+  @else{ @include button }
+}
+
+@mixin asideName($size, $bottom: 0, $weight: 700, $color: null){
+  .asideName{
+    margin-bottom: $bottom;
+    @if ($color) {color: $color;}
+    font: {
+      size: $size;
+      weight: $weight;
+    }
+  }
+}
+
+@mixin asideDESC($size, $bottom: 0, $weight: 600, $color: null){
+  .asideDESC{
+    margin-bottom: $bottom;
+    color: $color;
+    font: {
+      size: $size;
+      weight: $weight;
+    }
+  }
+}
+
+
+@mixin itemImgSetting($width:auto, $height:auto, $margin-bottom:0, $imgwidth:100%, $imgheight: 100%) {
+  .itemImage{
+    @include setFlex(center, center);
+    width: $width;
+    height: $height;
+    margin-bottom: $margin-bottom;
+    img{
+      @include setSize($imgwidth, $imgheight);
+    }
+    video{ 
+      @include setSize($imgwidth, $imgheight);
+      margin: 0 auto;
+    }
+  }
+}
+
+@mixin itemName($size, $bottom: 0, $weight: 700, $color: null){
+  .itemName{
+    margin-bottom: $bottom;
+    color: $color;
+    font: {
+      size: $size;
+      weight: $weight;
+    }
+  }
+}
+
+@mixin itemDESC($size, $bottom: 0, $weight: 600, $color: null){
+  .itemDESC{
+    margin-bottom: $bottom;
+    color: $color;
+    font: {
+      size: $size;
+      weight: $weight;
+    }
+  }
+}
+
+@mixin button($margin: 0) {
+  button{
+    min-width: 120px;
+    height: 36px;
+    margin-right: $margin;
+    padding: 6px 10px 6px 10px;
+    border: 1px solid $orange;
+    background-color: transparent;
+    color: $orange;
+    font: {
+      size: 16px;
+      weight: 700;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@import "./../../Styles/common.scss";
+
+.ProductItem {
+	width: 267px;
+	margin-bottom: 70px;
+	margin-right: 2.1%;
+
+	.heartBox {
+		position: relative;
+		height: 40px;
+
+		button {
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 0;
+
+			.heartImg {
+				height: inherit;
+				background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598026472502/images/heart.svg")
+					no-repeat center;
+			}
+
+			&:hover .heartImg {
+				background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598026472502/images/heart_orange.svg")
+					no-repeat center;
+			}
+
+			.heartImgCheck {
+				height: inherit;
+				background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598026472502/images/heart_red.svg")
+					no-repeat center;
+			}
+		}
+	}
+
+	.imageBox {
+		@include center;
+
+		img {
+			width: 196.47px;
+			height: 196.47px;
+		}
+	}
+
+	.productName {
+		display: block;
+		height: 40px;
+		color: $black;
+		font-size: 15px;
+		font-weight: 600;
+	}
+
+	.productInfo {
+		margin: 25px 0 5px;
+
+		.ratingBox {
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+
+		.viewDetail {
+			font-size: 14px;
+			font-weight: 600;
+			color: $black;
+			text-decoration: underline solid $black;
+		}
+	}
+
+	.productVariation {
+		display: flex;
+		align-items: center;
+		height: 216px;
+
+		li {
+			margin-right: 5px;
+
+			.variationImgButton {
+				display: flex;
+				align-items: flex-end;
+				padding: 0;
+				padding-bottom: 2px;
+
+				img {
+					height: 84px;
+				}
+			}
+
+			.borderBlack {
+				border-bottom: solid 2px $black;
+			}
+
+			.borderNone {
+				border-bottom: solid 2px $white;
+			}
+
+			.variationName {
+				height: 50px;
+				margin-top: 10px;
+				font-size: 12px;
+				font-weight: 600;
+			}
+
+			.price {
+				font-size: 12px;
+				font-weight: 600;
+			}
+		}
+	}
+
+	.addTobagBox {
+		display: flex;
+		justify-content: space-between;
+
+		button {
+			width: 157.12px;
+			height: 42px;
+			background: $orange;
+			font-weight: 600;
+
+			&:hover {
+				background: $black;
+				color: $white;
+			}
+		}
+	}
+}

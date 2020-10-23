@@ -1,0 +1,73 @@
+@import "../../../Styles/common.scss";
+
+.MenuContent5 {
+	@include center;
+	font-weight: 600;
+	font-size: 13px;
+	z-index: 99;
+	position: absolute;
+
+	.MenuContentContainer {
+		display: flex;
+		justify-content: space-between;
+		height: 100%;
+		margin: 0 190px;
+		padding: 30px;
+		background-color: $orange;
+		width: 1150px;
+
+		.MenuContentBox {
+			display: flex;
+			flex-direction: column;
+
+			ul {
+				display: flex;
+				margin-bottom: 20px;
+
+				li {
+					margin: 0 10px 5px 0;
+					width: 200px;
+					line-height: 20px;
+
+					&:hover {
+						color: $white;
+						cursor: pointer;
+					}
+				}
+			}
+
+			.lowerList {
+				ul {
+					display: flex;
+					flex-direction: column;
+				}
+			}
+		}
+
+		.MenuBanner {
+			.bannerImg {
+				width: 416px;
+				height: 140px;
+				background-image: url("https://www.t2tea.com/on/demandware.static/-/Sites-storefront_t2/default/dw9d49e700/images/content/22.04_ANZ_MD19_Mega_Menu_V1_Recipe.jpg");
+				background-size: contain;
+				padding: 20px;
+			}
+
+			.bannerTitle {
+				font-size: 30px;
+				color: $white;
+				font-weight: 600;
+				line-height: 1;
+			}
+
+			.goToPageIcon {
+				width: 33px;
+				height: 33px;
+				fill: $white;
+				background-image: url("https://www.t2tea.com/on/demandware.static/-/Library-Sites-T2SharedLibrary/default/dw3ee1d9c1/images/content/circle-arrow-down-black.svg");
+				transform: rotate(270deg);
+				margin-top: 10px;
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+@import "../../../Styles/common.scss";
+
+.MenuContent2 {
+	@include center;
+	font-weight: 600;
+	font-size: 13px;
+	z-index: 99;
+	position: absolute;
+
+	.MenuContentContainer {
+		display: flex;
+		justify-content: space-between;
+		height: 100%;
+		margin: 0 190px;
+		padding: 30px;
+		background-color: $orange;
+		width: 1150px;
+
+		.MenuContentBox {
+			display: flex;
+			flex-direction: column;
+
+			ul {
+				display: flex;
+				margin-bottom: 20px;
+
+				li {
+					margin: 0 10px 5px 0;
+					width: 200px;
+					line-height: 20px;
+
+					&:hover {
+						color: $white;
+						cursor: pointer;
+					}
+				}
+			}
+
+			.lowerList {
+				ul {
+					display: flex;
+					flex-direction: column;
+				}
+			}
+		}
+
+		.MenuBanner {
+			.bannerImg {
+				width: 416px;
+				height: 140px;
+				background-image: url("https://cdn.intelligencebank.com/au/share/NOrD/e3oNW/8MXGD/original/eleganza-mega-menu-tile-2x");
+				background-size: contain;
+				padding: 20px;
+			}
+
+			.bannerTitle {
+				font-size: 30px;
+				color: $white;
+				font-weight: 600;
+				line-height: 1;
+			}
+
+			.goToPageIcon {
+				width: 33px;
+				height: 33px;
+				fill: $white;
+				transform: rotate(270deg);
+				margin-top: 10px;
+			}
+		}
+	}
+}

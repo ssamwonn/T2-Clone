@@ -1,0 +1,238 @@
+@import "./../../Styles/common.scss";
+
+.error {
+  border: 1px solid red;
+}
+
+.Join {
+  .teaSoMain {
+    position: relative;
+
+    .teaSoLogoBox {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      left: 50%;
+      bottom: -100px;
+      transform: translate(-50%, -50%);
+      .LogoImg {
+        width: 120px;
+        height: 145px;
+        margin: 0 auto;
+        padding: 0px 0px 25px;
+      }
+      .LogoText {
+        margin: 0 auto;
+        width: 242.94px;
+        font-size: 44px;
+        font-weight: 600;
+        color: $orange;
+      }
+      .moveLoginBtn,
+      .moveJoinBtn {
+        margin: 14px auto;
+        width: 267px;
+        height: 40px;
+        border: 1px solid $white;
+        color: $white;
+      }
+      a {
+        margin: 0 auto;
+      }
+    }
+    .videoWrapper {
+      overflow: hidden;
+      height: 500px;
+      .video {
+        width: 100%;
+        object-fit: contain;
+        object-position: 45% -200px;
+      }
+    }
+  }
+
+  .headerIntro {
+    background-color: $lightgray;
+    .introTextBox {
+      display: flex;
+      justify-content: center;
+      width: 920px;
+      margin: 0 auto;
+      padding: 20px;
+      .introTitle {
+        width: 285px;
+        height: 108px;
+        padding: 10px 52px 30px 28px;
+        margin: 0 45px 0 0;
+        border-right: 1px solid $arrowgray;
+        font-size: 36px;
+        font-weight: 800;
+      }
+      .introSubText {
+        width: 528px;
+        height: 78px;
+        padding: 15px 0 0 45px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+  }
+
+  .contentBox {
+    margin: 65px 0;
+    height: 657px;
+    text-align: center;
+    font-size: 30px !important;
+    background-color: $white;
+    .contentTitle {
+      padding-top: 50px;
+      font-weight: 800;
+    }
+    .contentHeader {
+      display: flex;
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+  }
+
+  .joinFormSection {
+    padding: 50px 15px;
+    background-color: $lightgray;
+    .joinFormHeader {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .joinFormImg {
+        width: 550px;
+        height: 159px;
+      }
+    }
+  }
+
+  .formTable {
+    margin: 0 auto;
+    .nameTable {
+      display: flex;
+      justify-content: space-between;
+      width: 450px;
+      margin: 5px auto;
+      .firstName {
+        padding: 8px 10px;
+        width: 220px;
+        height: 42px;
+        background-color: white;
+      }
+      .lastName {
+        width: 220px;
+        height: 42px;
+        background-color: white;
+        padding: 8px 10px;
+      }
+    }
+  }
+
+  .errorMessage {
+    display: relative;
+    width: 450px;
+    margin: 0 auto;
+    color: #c90a0a;
+    font-size: 13px;
+  }
+
+  .inputFormSub {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    align-items: center;
+    margin: 0 auto;
+
+    .emailWrapper {
+      margin: 10px 0 0 0;
+    }
+    .loginEmail {
+      width: 450px;
+      height: 42px;
+      border: 1px solid $white;
+      margin: 0 0 5px auto;
+      padding: 5px 10px;
+      background-color: $white;
+    }
+    .labelText {
+      width: 450px;
+      margin: 0 auto;
+      font-size: 12px;
+      color: $footergray;
+    }
+    .phoneWrapper {
+      margin: 5px;
+    }
+    .phoneInput {
+      width: 450px;
+      height: 42px;
+      margin: 5px auto;
+      border: 1px solid $white;
+      padding: 5px 10px;
+      background-color: $white;
+    }
+    .pwdInput {
+      width: 450px;
+      height: 42px;
+      margin-bottom: 5px;
+      border: 1px solid $white;
+      padding: 5px 10px;
+      background-color: $white;
+    }
+    .confirmWapper {
+      margin: 5px;
+    }
+    .confirmInput {
+      width: 450px;
+      height: 42px;
+      margin: 5px;
+      padding: 5px 10px;
+      border: 1px solid $white;
+      background-color: $white;
+    }
+  }
+
+  .checkTable {
+    display: flex;
+    width: 450px;
+    height: 37px;
+    margin: 0 auto;
+    padding: 3px 0;
+    .joinCheckBox {
+      width: 20px;
+      height: 20px;
+      border: none;
+    }
+    .infoText {
+      margin-left: 20px;
+      width: 418px;
+      height: 28px;
+      font-size: 12px;
+      line-height: 15px;
+      color: $footergray;
+    }
+  }
+
+  .dateCategory {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+  .joinBtn {
+    background-color: $orange;
+    width: 250px;
+    height: 42px;
+    margin: 0 auto;
+    &:hover {
+      -webkit-transition: background-color 0.32s ease-in-out;
+      background-color: $white;
+    }
+  }
+}

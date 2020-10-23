@@ -1,0 +1,103 @@
+@import "../../../Styles/common.scss";
+
+.SearchBar {
+	background-color: $white;
+	// animation-name: down;
+	// animation-duration: 10s;
+
+	// @keyframes down {
+	// 	0% {
+	// 		top: -100px;
+	// 	}
+	// 	100% {
+	// 		top: 0px;
+	// 	}
+	// }
+
+	.searchBarArea {
+		@include center;
+		position: relative;
+		height: 78px;
+		padding: 0 130px;
+		margin: 0 160px;
+
+		.searchBarContainer {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+
+			form {
+				position: relative;
+				width: 100%;
+
+				input {
+					font-size: 50px;
+					font-weight: 600;
+					color: $orange;
+
+					&::placeholder {
+						color: $orange;
+					}
+				}
+
+				button {
+					background-image: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1583687009284/images/icon-search-primary.svg");
+					background-repeat: no-repeat;
+					background-position: center 12px;
+					background-size: 100%;
+					position: absolute;
+					top: 0;
+					right: 0;
+					height: 55px;
+					width: 50px;
+					color: $orange;
+
+					&:hover {
+						background-image: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1583687009284/images/icon-search-primary.svg");
+						background-repeat: no-repeat;
+						background-position: center -43px;
+						background-size: 100%;
+						position: absolute;
+						top: 0;
+						right: 0;
+						height: 55px;
+						width: 50px;
+						color: $orange;
+					}
+				}
+			}
+
+			.closeButton {
+				@include center;
+				position: absolute;
+				top: 15px;
+				right: 30px;
+
+				&:hover {
+					cursor: pointer;
+
+					svg {
+						fill: $black;
+					}
+
+					span {
+						color: $black;
+					}
+				}
+
+				svg {
+					width: 9.2px;
+					height: 9.2px;
+					fill: $orange;
+					margin: 0 3px -1px 0;
+				}
+
+				span {
+					font-size: 12px;
+					font-weight: 600;
+					color: $orange;
+				}
+			}
+		}
+	}
+}

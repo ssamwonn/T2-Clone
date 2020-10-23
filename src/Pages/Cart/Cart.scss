@@ -1,0 +1,213 @@
+@import "../../Styles/common.scss";
+
+.Cart {
+	width: 100%;
+	overflow: hidden;
+	.displayNone {
+		transform: translate(100%, 0%);
+		transition: transform 1s, -webkit-transform 1s;
+	}
+
+	.displayGray {
+		display: none;
+	}
+
+	.background {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		opacity: 50%;
+	}
+
+	.miniCartBox {
+		position: fixed;
+		width: 436px;
+		height: 100%;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: $white;
+		z-index: 999;
+		transform: translateX(100%, 0%);
+		transition: transform 1s, -webkit-transform 1s;
+		opacity: 1;
+
+		.headTitle {
+			height: 42px;
+			border-bottom: 1px solid $footergray;
+			padding: 10px 5px 10px 5px;
+			display: flex;
+			justify-content: space-between;
+			font-weight: 400;
+			margin: 20px;
+			.headText {
+				font-size: 24px;
+			}
+			.headSubText {
+				margin: 0 0 0 150px;
+				font-size: 16px;
+				line-height: 2;
+			}
+		}
+
+		.cartTable {
+			width: 100%;
+			height: 460px;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+			overflow: scroll;
+		}
+		.clear {
+			line-height: 2;
+			cursor: pointer;
+			.Xbox {
+				width: 12px;
+				height: 12px;
+			}
+		}
+	}
+
+	.cartItem {
+		display: flex;
+		.mainImg {
+			margin-left: 5px;
+			width: 90px;
+			height: 90px;
+		}
+
+		.product {
+			display: flex;
+			flex-direction: column;
+			.productName {
+				font-size: 16px;
+			}
+			.productUnit {
+				font-size: 14px;
+			}
+			.productQuantity {
+				font-size: 13px;
+				color: $textgray;
+			}
+		}
+	}
+
+	.productPriceBox {
+		display: flex;
+		justify-content: space-between;
+		margin: 15px;
+		.productRemove {
+			font-size: 13px;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		.productRemove:hover {
+			text-decoration: none;
+			cursor: pointer;
+		}
+		.productPrice {
+			font-size: 14px;
+		}
+	}
+
+	.totalBox {
+		width: 100%;
+		background-color: $white;
+		position: absolute;
+		bottom: 20px;
+
+		.subtoTalBox {
+			display: flex;
+			justify-content: space-between;
+			margin: 10px;
+			border-bottom: 1px solid $footergray;
+			padding: 10px 5px 10px 5px;
+
+			.subtoTalBox {
+				display: flex;
+				justify-content: space-between;
+				margin: 10px;
+				border-bottom: 1px solid $footergray;
+				padding: 10px 5px 10px 5px;
+				.subTotal {
+					font-weight: bold;
+				}
+			}
+
+			.subTotalPrice {
+				font-size: 16px;
+				font-weight: bold;
+			}
+		}
+
+		.deliveryBox {
+			display: flex;
+			justify-content: space-between;
+			margin: 10px;
+			border-bottom: 1px solid $footergray;
+			padding: 10px 5px 10px 5px;
+			.delivery {
+				font-size: 14px;
+			}
+			.deliveryFree {
+				font-size: 14px;
+			}
+		}
+
+		.totalResult {
+			display: flex;
+			justify-content: space-between;
+			margin: 10px;
+			border-bottom: 1px solid $footergray;
+			padding: 10px 5px 10px 5px;
+			.total {
+				font-weight: 400;
+				font-size: 24px;
+				.totalText {
+					font-size: 14px;
+				}
+			}
+			.totalPrice {
+				font-size: 20px;
+				font-weight: bold;
+			}
+		}
+
+		.buttonBox {
+			display: flex;
+			justify-content: center;
+			.proceed {
+				display: flex;
+				width: 420px;
+				height: 42px;
+				text-align: center;
+				justify-content: space-between;
+				background-color: $orange;
+				font-size: 15px;
+				padding: 10px;
+				&:hover {
+					color: $white;
+				}
+				.arrowImg {
+					width: 20px;
+					height: 15px;
+					vertical-align: text-bottom;
+					right: 0;
+				}
+			}
+		}
+	}
+
+	.onButton {
+		z-index: 999;
+		display: flex;
+		top: 0;
+		position: absolute;
+		left: 0;
+		justify-content: left;
+		width: 250px;
+		height: 42px;
+		background-color: $orange;
+	}
+}

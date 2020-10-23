@@ -1,0 +1,40 @@
+@import "./../../../Styles/common.scss";
+
+.Wishlist {
+	width: inherit;
+
+	.wishlistHeader {
+		@include center;
+		height: 58px;
+		background-color: $lightgray;
+		font-size: 24px;
+		font-weight: 600;
+	}
+
+	.wishlistProduct {
+		> ul {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding-top: 22px;
+		}
+	}
+
+	.ProductItem {
+		width: 257.47px;
+
+		&:nth-child(3n) {
+			margin-right: 0px;
+		}
+
+		.heartBox {
+			button {
+				display: none;
+			}
+		}
+
+		.removeForm {
+			display: block;
+		}
+	}
+}

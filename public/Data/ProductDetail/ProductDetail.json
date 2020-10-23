@@ -1,0 +1,28 @@
+{
+	"product_detail": {
+		"product_type": "Chocolate, Indulgent & Sweet Tea",
+		"product_name": "Apple Maple Muffin Loose Leaf Feature Cube",
+		"product_price": "26.00",
+		"big_image": [
+			"https://www.t2tea.com/dw/image/v2/AASF_PRD/on/demandware.static/-/Sites-masterCatalog_t2/default/dw1815455f/images/products/2020 Aug/T115AE120_apple-maple-muffin_p2.png?sw=555&sh=555&sm=fit",
+			"https://www.t2tea.com/dw/image/v2/AASF_PRD/on/demandware.static/-/Sites-masterCatalog_t2/default/dw1c74c431/images/products/2020 Aug/T115AE120_apple-maple-muffin_p1.png?sw=555&sh=555&sm=fit",
+			"https://www.t2tea.com/dw/image/v2/AASF_PRD/on/demandware.static/-/Sites-masterCatalog_t2/default/dw6918da87/images/products/2020 Aug/Apple_Mobile_1024x1024.png?sw=555&sh=555&sm=fit"
+		],
+		"small_image": [
+			"https://www.t2tea.com/dw/image/v2/AASF_PRD/on/demandware.static/-/Sites-masterCatalog_t2/default/dw1815455f/images/products/2020 Aug/T115AE120_apple-maple-muffin_p2.png?sw=100&sh=100&sm=fit",
+			"https://www.t2tea.com/dw/image/v2/AASF_PRD/on/demandware.static/-/Sites-masterCatalog_t2/default/dw1c74c431/images/products/2020 Aug/T115AE120_apple-maple-muffin_p1.png?sw=100&sh=100&sm=fit",
+			"https://www.t2tea.com/dw/image/v2/AASF_PRD/on/demandware.static/-/Sites-masterCatalog_t2/default/dw6918da87/images/products/2020 Aug/Apple_Mobile_1024x1024.png?sw=100&sh=100&sm=fit"
+		],
+		"size_unit": [],
+		"size_price": [],
+		"size_image": [],
+		"description": "Net Wt. 120g/4.2oz  Prepare yourself to taste a green tea like no other…Juicy apple, sweet maple, dashes of cinnamon and pieces of caramel transform this tea into a baker’s delight! Sit back, sip and savour this apple dessert with all the benefits of green tea!",
+		"ingredients": "Green tea (48%), apple (26%),  flakes, natural flavouring, cinnamon bits (4%), caramel bits (3.9%) (condensed skimmed , sugar, glucose syrup, butterfat, humectant: sorbitol syrup (E420), emulsifier: mono and diglycerides of fatty acids (E471)), natural maple syrup flavouring (1.5%), rose petals",
+		"brewing_quantity": "1 tsp per cup",
+		"brewing_time": "1-3 mins",
+		"brewing_temp": "80°C (176°F)",
+		"quantity_img": "https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/default/dw5cb19559/images/brewing-quantity.png",
+		"time_img": "https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/default/dwc12463fa/images/brewing-time.png",
+		"temp_img": "https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/default/dw29446e3d/images/brewing-degrees.png"
+	}
+}

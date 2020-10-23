@@ -1,0 +1,364 @@
+@import "../../Styles/common.scss";
+@import "./Components/module.scss";
+
+main {
+  padding-top : 125px;
+  .itemBox {
+    transition: 1s;
+  }
+
+  .mainBannerBox {
+    position: relative;
+    
+    video {
+      overflow: hidden;
+      width: 100%;
+    }
+    .whiteBox {
+      z-index: 1;
+      padding : 90px;
+      text-align: center;
+      @include setAbsolute(null, null, 0);
+      @include setSize(100%, 290px);
+      background-color: $white;
+
+      .boldText {
+        font-size: 25px;
+        font-weight: bold;
+        .orangefont {
+          color: $orange;
+        }
+      }
+      .subText {
+        font-size: 20px;
+
+        .underbarText {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .crouselModule {
+    @include moduleContainerSetting;
+    width : 100%;
+    
+    .moduleHead {
+      @include moduleHead(1);
+    }
+    .moduleItemList {
+      @include setFlex(null, null, nowrap);
+      overflow: hidden;
+      width: 100vw;
+
+
+      .itemBox {
+        @include itemName(36px, 12px);
+        @include itemDESC(18px, 24px);
+        @include button;
+      }
+
+      .matchaBox {
+        @include itemImgSetting(700px, 570px);
+        @include setFlex(null, center);
+        @include setSize(1140px, 570px);
+        margin-right: 70px;
+
+        .itemNoteBox {
+          @include setFlex(null, center, wrap);
+          width: 310px;
+          margin-left: 50px;
+        }
+      }
+
+      .matchaFlaskBox {
+        width: 400px;
+        margin-right: 70px;
+        @include itemImgSetting(400px, auto, 30px);
+      }
+
+      .moroccan {
+        @include itemImgSetting(430px, 554px, 30px);
+        margin-right: 70px;
+
+        @include setFlex(null, center);
+        @include setSize(800px, 554px);
+
+        .itemNoteBox {
+          @include setFlex(null, center, wrap);
+          width: 310px;
+          margin-left: 50px;
+        }
+      }
+
+      .subscription  {
+        @include itemImgSetting(480px, 618px, 30px);
+        margin-right: 70px;
+      }
+
+      .drinking {
+        @include itemImgSetting(370px, 446.78px);
+      } 
+    } 
+  }
+
+  .bookdeskModule {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 100px auto;
+    width: 1700px;
+    
+    .moduleHead {
+        position: absolute;
+        @include moduleHead();
+      }
+
+    .moduleMain {
+      display: flex;
+
+      .moduleAside {
+        order: 1;
+        @include setSize(960px, 620px);
+        margin: 16px;
+        padding: 50px;
+        background-image: url(/Images/Main/B_aside.jpg);
+        background-size: 100% 100%;
+        @include asideName(50px, 0, 700, $white);
+      } 
+
+      .moduleItemList {
+        @include setFlex(null, flex-end, wrap);
+        width: 600px;
+        margin: 0 25px;
+
+        .itemBox {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: space-between;
+          margin :0 auto;
+          @include setSize(300px, 300px);
+          padding: 16px;
+          @include itemImgSetting(170px, 170px);
+          .itemImage {
+            margin : 0 auto;
+          }
+          .itemNoteBox {
+            .itemTextBox {
+              height: 60px;
+              @include setFlex(center, flex-start, wrap);
+              @include itemName(14px, 2px);
+              @include itemDESC(14px);
+            }
+            
+            .itemButtonBox {
+              display: flex;
+              justify-content: center;
+              @include button;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .showWindowModule {
+    position: relative;
+    @include moduleContainerSetting;
+    width: 1796px;
+    .moduleHead {
+      position : absolute;
+      @include moduleHead;
+    }
+
+    .moduleMain {
+      display: flex;
+
+      .moduleItemList {
+        display: grid;
+        grid-template-rows: repeat(2, 320px);
+        grid-template-columns: repeat(6, 15.451vw);
+        margin: 0 auto;
+
+        .itemBox {
+          @include setFlex(center, flex-end, wrap);
+          @include itemImgSetting(100%, 170px, 10px, 170px, 170px);
+          @include button;
+          @include itemName(12px, 600);
+          margin-right: 40px;
+        }
+
+        .biggerItemBox {
+          grid-row-end: span 2;
+          grid-column-end: span 2;
+          margin: 0;
+          padding: 0 70px;
+          @include itemImgSetting(262px, 262px, 120px);
+
+          .itemNoteBox {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            @include button;
+            @include itemName(16px);
+          }
+        }
+      }
+    }
+  }
+
+  .galleryModule {
+    position: relative;
+    @include setFlex(null, flex-end);
+    @include setSize(1460px, 875px);
+    @include moduleContainerSetting(140px, 80px);
+    padding: 80px;
+    background: $mediumgray;
+    
+    .moduleHead {
+      @include setAbsolute(50px);
+      @include moduleHead;
+    }
+
+    .moduleMain {
+      display: flex;
+
+      .moduleAside {
+        order: 1;
+        @include setFlex(null, center, wrap);
+        width: 360px;
+        margin-left: 100px;
+        @include asideName(36px, 15px);
+        @include asideDESC(22px);
+      }
+
+      .moduleItemList {
+        display: flex;
+        align-items: flex-end;
+
+        .itemBox {
+          width: 395px;
+          margin-right: 40px;  
+          @include itemImgSetting(395px, 451.42px, 30px);
+          @include itemName(32px, 4px);
+          @include itemDESC(16px);
+          @include button;
+        } 
+      }
+    }
+  }
+
+  .fadeModule {
+    position: relative;
+    @include setSize(100%, 740px);
+    margin-bottom: 140px;
+
+    .moduleHead {
+      z-index: 1;     
+      @include moduleHead(1);
+      padding : 50px;
+    }
+
+    .moduleItemList {
+      display: flex;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      
+      .itemBox {
+        position: relative;
+        min-width: 100%;
+        @include setSize(100%, 740px);
+        @include itemImgSetting(100%, 100%);
+
+        .itemNoteBox {
+          @include setAbsolute(0, 50%);
+          @include setFlex(null, center, wrap);
+          @include setSize(460px, 100%);
+          @include button(25px);
+          
+          .itemTextBox {
+            color : $white;
+            @include itemName(36px, 14px);
+            @include itemDESC(16px, 25px);
+          }
+        }
+      }
+    }
+  }
+
+  .jigModule {
+    position: relative;
+    @include moduleContainerSetting(140px,150px);
+    
+    .itemBox {
+      display: flex;
+      @include setSize(1150px, 574px);
+      @include itemImgSetting(670.83px, auto, 30px);
+
+      .itemNoteBox {
+        @include setFlex(null, center, wrap);
+        width: 363px;
+        margin-left: 5vw;
+        @include itemName(35px, 28px);
+        @include itemDESC(16px, 31.2px);
+        @include button;
+      }
+    }
+    .rightStruckBox {
+      margin-left: auto;
+    }
+  }
+
+  .crouselGalleryModule {
+    margin-left: 50px;
+    .moduleHead {
+      @include moduleHead(1);
+      padding-right: 50px;
+    }
+
+    .moduleMain {
+      display: flex;
+      
+      .moduleAside {
+        @include setFlex(null, center, wrap);
+        @include asideName(36px, 12px);
+        @include asideDESC(16px, 25px);
+        max-width: 400px;
+        padding-left: auto;
+        padding-right: 100px;
+        background-color: white;
+        z-index: 1;
+      }
+
+      .moduleItemList {
+        display: flex;
+        overflow: hidden;
+        margin-bottom : 150px;
+        .itemBox {
+          position:  relative;
+          min-width: 670px;
+          max-width: 670px;
+          height :670px;
+          margin-right: 30px;
+          background-color: black;
+          @include itemImgSetting(100%, 100%);
+          @include button;
+
+          .itemNoteBox {
+            position: absolute;
+            bottom: 0;
+            padding: 10px 50px 110px;
+            color: $white;
+
+            .itemTextBox {
+              width: 380px;
+              @include itemName(36px, 12px);
+              @include itemDESC(18px, 24px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

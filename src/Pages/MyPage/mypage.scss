@@ -1,0 +1,154 @@
+@import "../../Styles/common.scss";
+
+.MyPage {
+	@include columnCenter;
+	font-family: "Helvetica Now", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	width: 100%;
+	padding: 125px 0 30px 0;
+
+	.accountContainer {
+		width: 1200px;
+		padding: 0 30px;
+	}
+
+	.accountHeader {
+		margin-top: 20px;
+
+		.accountUl {
+			display: flex;
+			padding-bottom: 40px;
+			font-size: 11px;
+
+			li {
+				&:after {
+					margin: 0 5px 0 7px;
+					content: ">";
+				}
+				&:last-child:after {
+					content: "";
+				}
+			}
+		}
+		.greeting {
+			display: flex;
+			justify-content: center;
+			height: 82px;
+			padding: 10px 0 30px;
+			margin-bottom: 40px;
+			font-size: 35px;
+			font-weight: 600;
+		}
+	}
+
+	.mainContainer {
+		display: flex;
+		padding: 0 15px;
+
+		.accountNav {
+			width: 241.58px;
+
+			.navItem {
+				* {
+					color: $black;
+					font-size: 18px;
+					font-weight: 600;
+				}
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				width: inherit;
+				height: 71px;
+				padding-left: 8px;
+				border-bottom: 2px solid $lightgray;
+				cursor: pointer;
+
+				&:first-child {
+					border-top: 2px solid $lightgray;
+				}
+
+				&:hover,
+				.checked {
+					* {
+						color: $orange;
+					}
+					.account {
+						background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598458481353/images/icons/account-hover.svg")
+							no-repeat center;
+					}
+
+					.detail {
+						background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598458481353/images/icons/detail-hover.svg")
+							no-repeat center;
+					}
+
+					.email {
+						background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598458481353/images/icons/emails-hover.svg")
+							no-repeat center;
+					}
+
+					.wishlist {
+						background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598458481353/images/icons/heart-hover.svg")
+							no-repeat center;
+					}
+
+					.payment {
+						background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598458481353/images/icons/payments-hover.svg")
+							no-repeat center;
+					}
+
+					.subscription {
+						background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598458481353/images/icons/subscription-hover.svg")
+							no-repeat center;
+					}
+				}
+
+				a {
+					display: flex;
+					align-items: center;
+					height: 28px;
+
+					div {
+						width: 32px;
+						height: inherit;
+						margin-right: 16px;
+						background-size: contain;
+					}
+
+					.account {
+						background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598427800341/images/icons/account.svg")
+							no-repeat center;
+					}
+
+					.detail {
+						background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598427800341/images/icons/detail.svg")
+							no-repeat center;
+					}
+
+					.email {
+						background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598427800341/images/icons/emails.svg")
+							no-repeat center;
+					}
+
+					.wishlist {
+						background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598427800341/images/icons/heart.svg")
+							no-repeat center;
+					}
+
+					.payment {
+						background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598427800341/images/icons/payments-icon.svg")
+							no-repeat center;
+					}
+
+					.subscription {
+						background: url("https://www.t2tea.com/on/demandware.static/Sites-UNI-T2-APAC-Site/-/en_AU/v1598427800341/images/icons/subscription-icon.svg")
+							no-repeat center;
+					}
+				}
+			}
+		}
+		.info {
+			width: 838.42px;
+			margin-left: 30px;
+		}
+	}
+}

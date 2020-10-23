@@ -1,0 +1,176 @@
+@import "./../../Styles/common.scss";
+
+.Login {
+  width: 100%;
+  height: 100%;
+  background-color: $black;
+  padding-top: 125px;
+
+  .headerImg {
+    display: flex;
+    position: relative;
+    max-width: 1140px;
+    height: 335px;
+    margin: 0 auto;
+    background-size: 1140px auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url("https://www.t2tea.com/on/demandware.static/-/Library-Sites-T2SharedLibrary/default/dwb94e22cd/images/content/RELAUNCHED-Tea-Society-Banner-Sign-Up-page.jpg");
+    .headeText a {
+      display: flex;
+      position: absolute;
+      top: 290px;
+      right: 0;
+      font-size: 14px;
+      color: #777777;
+      text-decoration: underline;
+    }
+  }
+
+  .loginBox {
+    max-width: 740px;
+    height: 350px;
+    margin: 0 auto;
+    .displayNone {
+      color: red;
+      display: none;
+      font-size: 15px;
+      width: 100%;
+      padding: 10px 0;
+    }
+    .displayOn {
+      color: red;
+      display: inline;
+      font-size: 15px;
+      width: 100%;
+      height: 100px;
+      padding: 10px 0;
+    }
+    .contentHeader {
+      width: 350px;
+      height: 86px;
+      font-size: 36px;
+      color: $white;
+      margin: 0 auto;
+      text-align: center;
+      .contentText {
+        margin: 0 auto;
+        font-weight: 800;
+        font-size: 36px;
+      }
+      .contentSubText {
+        font-weight: 800;
+        font-size: 16px;
+        color: $white;
+      }
+    }
+    .formBox {
+      max-width: 350px;
+      max-height: 230px;
+      margin: 0 auto;
+      .formBoxText {
+        width: 350px;
+        height: 12px;
+        margin: 15px 0px 10px;
+        color: $white;
+        font-size: 12px;
+      }
+      .inputEmail,
+      .inputPassWord {
+        position: relative;
+        width: 350px;
+        height: 42px;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        color: $white;
+        border: 1px solid $white;
+        font-size: 15px;
+      }
+      .succesImg {
+        position: absolute;
+        width: 20px;
+        margin: 10px -30px;
+        height: 20px;
+        border-radius: 100%;
+      }
+      .errorImg {
+        display: none;
+        vertical-align: middle;
+      }
+      .errorIcon {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+      }
+      .errorIconNone {
+        display: none;
+      }
+      .inputBox {
+        width: 350px;
+        height: 42px;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        color: $white;
+        border: 1px solid red;
+      }
+      .inputBox::placeholder {
+        color: $white;
+      }
+      .inputChekBox {
+        display: flex;
+      }
+      .inputChekBox {
+        font-size: 16px;
+        color: $white;
+        padding: 0 0 0 5px;
+        .inputChek {
+          width: 15px;
+          height: 15px;
+          margin-left: 0;
+          top: 0;
+          left: 0;
+        }
+        .inputChekText {
+          font-size: 12px;
+          line-height: 1;
+        }
+      }
+      .nextLoginBtn {
+        width: 350px;
+        height: 38px;
+        margin-top: 5px;
+        padding: 1px 10px;
+        font-size: 15px;
+        line-height: 36px;
+        font-weight: 500;
+        background-color: $orange;
+        font-family: HelveticaNeueW01-75Bold;
+        border: none;
+      }
+      .nextLoginBtn:hover {
+        background-color: $white;
+        -webkit-transition: background-color 0.15s ease-in-out;
+      }
+      .prevLoginBtn {
+        font-size: 15px;
+        width: 350px;
+        height: 38px;
+        margin-top: 5px;
+        padding: 1px 10px;
+        line-height: 36px;
+        font-weight: 500;
+        background-color: #f6ab6c;
+        font-family: HelveticaNeueW01-75Bold;
+        border: none;
+      }
+      .inputChek {
+        background-color: $black;
+        color: $black;
+      }
+      .findPassword {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+}
